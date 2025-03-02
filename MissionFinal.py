@@ -230,6 +230,7 @@ def mission():
             print("Stored QR Data: ", stored_qr_data)
             vehicle.mode = VehicleMode("RTL")
     finally:
+        print("Mission Accomplished\n")
         print("\nClosing vehicle connection and cleaning up.")
         video_writer.release()
         camera.stop()
